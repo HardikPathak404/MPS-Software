@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>MPS permit Application form section 2</title>
+        <link rel="stylesheet" type="text/css" href="general.css">
+    </head>
+    <body class="section">
+        <header>
+            <h1>Mobility Parking Scheme (MPS)</h1>
+            <nav>
+                <div>
+                    <a href="homepage.html">Home</a>
+                    <a href="landing.html">Log out</a>
+                </div>
+            </nav>
+        </header>
+        <h1 id="residentApplication">Medical Certificate</h1>
+        <form id="sectionTwo" method="post">
+                <div class="secTwoTop">
+                    <h3>SECTION 2</h3>
+                    <p>To be completed by a regiistered medical practitioner.</p>
+                    <p>
+                        The MPS is designed to maintain the independence of people with a mobility disability.
+                        Applicants that do not meet the elgibility criteria on page 1 must not be certified as 
+                        eligible for a permit. It is important that only people with medical conditions that severely
+                        affect thier mobility are certified as meeting the scheme's eligibility criteria.
+                    </p>
+                </div>
+                <ol>
+                    <li class="medicalCondition">
+                        <h3>
+                            I certify that I have examined the applicant shown above in thiw form and 
+                            the applicant's condition is:
+                        </h3>
+                        <label for="disability">Select one of the clinically recognisable disabilities: </label>
+                        <select id="disability" name="disability">
+                            <optgroup label="">
+                                <option value="" selected disabled>Select disabilities</option>
+                                    <option value="paraplegia">Paraplegia</option>
+                                    <option value="quadriplegia">Quadriplegia</option>
+                                    <option value="legAmputation">Leg amputation</option>
+                                    <option value="motorNeuron">Motor Neuron disease</option>
+                                    <option value="cerebralPalsy">Cerebral palsy</option>
+                                    <option value="chromosalOrSyndromic">Chromosomal or syndromic conditions</option>
+                                    <option value="neuroDegnerative">Neuro degenerative disorder</option>
+                                    <option value="neuroMascular">Neuro muscular disorder</option>
+                                    <option value="blindness">Blindness</option>
+                                    <option value="other">Other</option>
+                            </optgroup>
+                        </select>
+                        <div>
+                            <label for="otherDisability">Other, please specify: </label>
+                            <input type="text" id="otherDisability" name="disability">
+                        </div>
+                        <h3>Is the condition temporary?</h3>
+                        <div class="tempCondition">
+                            <div>
+                            <label for="isTemporary">Yes</label>
+                            <input type="radio" id="isTemporary" name="conditionTemp">
+                            </div>
+                            <div>
+                            <label for="notTemporary">No</label>
+                            <input type="radio" id="notTemporary" name="conditionTemp">
+                            </div>
+                            <div class="conditionPeriod">
+                            <p>If yes, give period of disability: </p>
+                            <input type="number" id="period" name="period" max="6" min="1">
+                            <p> months (not more than 6 months)</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="declaration">
+                        <h3>Declaration by the registered medical practitioner</h3>
+                        <p>***Please read important Privacy Statement and warning on page 1 of this form.</p>
+                        <div class="mpDeclaration">
+                            <input type="checkbox" id="agreeDeclaration" name="agreeDeclaration">
+                            <label for="agreeDeclaration">I declare that the details in this application are true and complete. I understand 
+                                that my "personal information" is being collected for confirmation of the MPS 
+                                Application Medical Certificate.</label>
+                        </div>
+                        <div class="mpSubmission">
+                            <input type="checkbox" id="agreeSubmission" name="agreeSubmission">
+                            <label for="agreeSubmission">I certify that today I have examined the person shown as the applicant for a MPS permit 
+                                and this person meets the eligibility criteria for a MPS permit as shown on the front 
+                                page of this form.</label>
+                        </div>
+                        <label for="submissionDate">Date</label>
+                        <input type="date" id="submissionDate"><br>
+                    </li>
+                </ol>
+            <div class="buttons">
+                <input type="button" value="Save">
+                <input type="submit">
+            </div>
+        </form>
+        <footer>
+            <p>Mobility Parking Scheme (MPS)</p>
+        </footer>
+    </body>
+</html>
